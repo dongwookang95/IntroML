@@ -39,6 +39,10 @@ logreg=LogisticRegression()
 logreg.fit(X_train,y_train)
 print("Test score:{:.2f}".format(logreg.score(X_test,y_test)))
 # %%
+
+# %%
+
+# %%
 #create a DataFrame with an integer feature and a categorical string feature
 demo_df = pd.DataFrame({'Integer Feature':[0,1,2,1],'Categorical Feature':['socks','fox','socks','box']})
 display(demo_df)
@@ -412,5 +416,7 @@ coef_nonzero = lr.coef_[lr.coef_ != 0]
 # %%
 plt.figure(figsize=(15, 2))
 plt.plot(coef_nonzero, 'o')
-plt.xticks(np.arange(len(coef_nonzero)), features_nonzero, rotation=90) plt.xlabel("Feature name")
+plt.xticks(np.arange(len(coef_nonzero)), features_nonzero, rotation=90)
+plt.xlabel("Feature name")
 plt.ylabel("Feature magnitude")
+# %%

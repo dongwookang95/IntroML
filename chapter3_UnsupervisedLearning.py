@@ -361,3 +361,5 @@ for ax, img in zip(axes.ravel(),digits.images):
     ax.imshow(img)
 
 # %%
+
+pca = PCA(n_components=2)
